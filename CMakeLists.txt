@@ -6,4 +6,5 @@ project(dining_philosophers)
 add_executable(dining_philosophers 
     main.cpp 
     philosopher.cpp
+    fork.cpp
     )
