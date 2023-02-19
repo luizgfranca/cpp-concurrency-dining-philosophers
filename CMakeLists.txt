@@ -7,4 +7,5 @@ add_executable(dining_philosophers
     main.cpp 
     philosopher.cpp
     fork.cpp
+    lock.cpp
     )

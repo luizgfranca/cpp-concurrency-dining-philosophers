@@ -1,5 +1,5 @@
-#include <mutex>
 #include <string>
+#include "lock.h"
 
 enum ForkResourceState {
     AVAILABLE,
@@ -9,7 +9,7 @@ enum ForkResourceState {
 
 class ForkResourceManager {
 
-    std::mutex m_manager_mutex;
+    Lock m_manager_mutex;
     ForkResourceState m_state = ForkResourceState::AVAILABLE;
 
     void lock();
